@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		500AA369243195E800E6D5EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA368243195E800E6D5EF /* AppDelegate.swift */; };
 		500AA36B243195E800E6D5EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA36A243195E800E6D5EF /* SceneDelegate.swift */; };
-		500AA36D243195E800E6D5EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA36C243195E800E6D5EF /* ViewController.swift */; };
 		500AA370243195E800E6D5EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500AA36E243195E800E6D5EF /* Main.storyboard */; };
 		500AA372243195EA00E6D5EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500AA371243195EA00E6D5EF /* Assets.xcassets */; };
 		500AA375243195EA00E6D5EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500AA373243195EA00E6D5EF /* LaunchScreen.storyboard */; };
 		500AA37D2431994E00E6D5EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 500AA37C2431994E00E6D5EF /* GoogleService-Info.plist */; };
+		500AA38E2431A15D00E6D5EF /* AlamofireExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA38A2431A15C00E6D5EF /* AlamofireExtensions.swift */; };
+		500AA38F2431A15D00E6D5EF /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA38B2431A15C00E6D5EF /* ResponseError.swift */; };
+		500AA3902431A15D00E6D5EF /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA38C2431A15D00E6D5EF /* APIConstants.swift */; };
+		500AA3912431A15D00E6D5EF /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA38D2431A15D00E6D5EF /* APIServices.swift */; };
+		500AA3932431A18100E6D5EF /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA3922431A18100E6D5EF /* NewsResponse.swift */; };
+		500AA3962431A19E00E6D5EF /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA3942431A19E00E6D5EF /* DesignableButton.swift */; };
+		500AA3972431A19E00E6D5EF /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA3952431A19E00E6D5EF /* DropDownView.swift */; };
+		500AA39C2431A1C900E6D5EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA3982431A1C800E6D5EF /* LoginViewController.swift */; };
+		500AA39D2431A1C900E6D5EF /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA3992431A1C900E6D5EF /* MainPageViewController.swift */; };
+		500AA39E2431A1C900E6D5EF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA39A2431A1C900E6D5EF /* RegisterViewController.swift */; };
+		500AA39F2431A1C900E6D5EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA39B2431A1C900E6D5EF /* MainViewController.swift */; };
 		9BA6E8C02C7836EAF82C9393 /* libPods-NewsAppWithLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2416C20A70E841F0FDD3E3 /* libPods-NewsAppWithLogin.a */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +31,22 @@
 		500AA365243195E800E6D5EF /* NewsAppWithLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppWithLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		500AA368243195E800E6D5EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		500AA36A243195E800E6D5EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		500AA36C243195E800E6D5EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		500AA36F243195E800E6D5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		500AA371243195EA00E6D5EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		500AA374243195EA00E6D5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		500AA376243195EA00E6D5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		500AA37C2431994E00E6D5EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		500AA38A2431A15C00E6D5EF /* AlamofireExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireExtensions.swift; sourceTree = "<group>"; };
+		500AA38B2431A15C00E6D5EF /* ResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		500AA38C2431A15D00E6D5EF /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		500AA38D2431A15D00E6D5EF /* APIServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		500AA3922431A18100E6D5EF /* NewsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
+		500AA3942431A19E00E6D5EF /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		500AA3952431A19E00E6D5EF /* DropDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		500AA3982431A1C800E6D5EF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		500AA3992431A1C900E6D5EF /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		500AA39A2431A1C900E6D5EF /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		500AA39B2431A1C900E6D5EF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6E2416C20A70E841F0FDD3E3 /* libPods-NewsAppWithLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsAppWithLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADB192D72A2B6DFC6603F62 /* Pods-NewsAppWithLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsAppWithLogin.debug.xcconfig"; path = "Target Support Files/Pods-NewsAppWithLogin/Pods-NewsAppWithLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		C033AF4BFF6D50B1DAF24694 /* Pods-NewsAppWithLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsAppWithLogin.release.xcconfig"; path = "Target Support Files/Pods-NewsAppWithLogin/Pods-NewsAppWithLogin.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,16 +85,74 @@
 		500AA367243195E800E6D5EF /* NewsAppWithLogin */ = {
 			isa = PBXGroup;
 			children = (
+				500AA3862431A0B800E6D5EF /* API */,
+				500AA3852431A09F00E6D5EF /* Models */,
+				500AA3842431A05500E6D5EF /* AppConfig */,
+				500AA3872431A0CD00E6D5EF /* Utility */,
+				500AA3882431A0EE00E6D5EF /* Storyboards */,
+				500AA3892431A0F900E6D5EF /* ViewControllers */,
+			);
+			path = NewsAppWithLogin;
+			sourceTree = "<group>";
+		};
+		500AA3842431A05500E6D5EF /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
 				500AA368243195E800E6D5EF /* AppDelegate.swift */,
 				500AA36A243195E800E6D5EF /* SceneDelegate.swift */,
-				500AA36C243195E800E6D5EF /* ViewController.swift */,
-				500AA36E243195E800E6D5EF /* Main.storyboard */,
 				500AA371243195EA00E6D5EF /* Assets.xcassets */,
-				500AA373243195EA00E6D5EF /* LaunchScreen.storyboard */,
 				500AA376243195EA00E6D5EF /* Info.plist */,
 				500AA37C2431994E00E6D5EF /* GoogleService-Info.plist */,
 			);
-			path = NewsAppWithLogin;
+			name = AppConfig;
+			sourceTree = "<group>";
+		};
+		500AA3852431A09F00E6D5EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				500AA3922431A18100E6D5EF /* NewsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		500AA3862431A0B800E6D5EF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				500AA38A2431A15C00E6D5EF /* AlamofireExtensions.swift */,
+				500AA38C2431A15D00E6D5EF /* APIConstants.swift */,
+				500AA38D2431A15D00E6D5EF /* APIServices.swift */,
+				500AA38B2431A15C00E6D5EF /* ResponseError.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		500AA3872431A0CD00E6D5EF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				500AA3942431A19E00E6D5EF /* DesignableButton.swift */,
+				500AA3952431A19E00E6D5EF /* DropDownView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		500AA3882431A0EE00E6D5EF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				500AA36E243195E800E6D5EF /* Main.storyboard */,
+				500AA373243195EA00E6D5EF /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		500AA3892431A0F900E6D5EF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				500AA3982431A1C800E6D5EF /* LoginViewController.swift */,
+				500AA3992431A1C900E6D5EF /* MainPageViewController.swift */,
+				500AA39B2431A1C900E6D5EF /* MainViewController.swift */,
+				500AA39A2431A1C900E6D5EF /* RegisterViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		55E3CD9FFDB838147FCC9012 /* Frameworks */ = {
@@ -210,9 +288,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				500AA36D243195E800E6D5EF /* ViewController.swift in Sources */,
+				500AA38E2431A15D00E6D5EF /* AlamofireExtensions.swift in Sources */,
+				500AA3972431A19E00E6D5EF /* DropDownView.swift in Sources */,
+				500AA3932431A18100E6D5EF /* NewsResponse.swift in Sources */,
+				500AA39D2431A1C900E6D5EF /* MainPageViewController.swift in Sources */,
+				500AA3902431A15D00E6D5EF /* APIConstants.swift in Sources */,
+				500AA38F2431A15D00E6D5EF /* ResponseError.swift in Sources */,
+				500AA39F2431A1C900E6D5EF /* MainViewController.swift in Sources */,
 				500AA369243195E800E6D5EF /* AppDelegate.swift in Sources */,
+				500AA3912431A15D00E6D5EF /* APIServices.swift in Sources */,
 				500AA36B243195E800E6D5EF /* SceneDelegate.swift in Sources */,
+				500AA39E2431A1C900E6D5EF /* RegisterViewController.swift in Sources */,
+				500AA3962431A19E00E6D5EF /* DesignableButton.swift in Sources */,
+				500AA39C2431A1C900E6D5EF /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

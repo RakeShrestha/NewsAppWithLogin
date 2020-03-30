@@ -33,6 +33,8 @@ enum PagesToShow: Int {
 }
 
 class MainViewController:UIViewController {
+    
+    // MARK: Properties
 
     @IBOutlet weak var accountInfo: UILabel!
     
@@ -40,6 +42,7 @@ class MainViewController:UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
     
+    // MARK: Override Function
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +55,8 @@ class MainViewController:UIViewController {
         
         view.addGestureRecognizer(tap)
     }
+    
+    // MARK: Custom Methods
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
@@ -74,7 +79,6 @@ class MainViewController:UIViewController {
     
     @objc func keyboardWillHide(notification: Notification){
 
-
         backgroundImage.isHidden = false
         
         UIView.animate(withDuration: 0.5){
@@ -89,6 +93,7 @@ class MainViewController:UIViewController {
         return true
     }
 
+    // MARK: Methods
     
     @IBAction func buttonRegisterOrLoginPressed(_ sender: Any) {
         

@@ -10,12 +10,15 @@ import UIKit
 
 class MainPageViewController: UIPageViewController, UIPageViewControllerDelegate {
 
+    // MARK: Variables
     
     var orderedViewControllers: [UIViewController] = [UIViewController]()
     
     var pagesToShow: [PagesToShow] = PagesToShow.pagesToShow()
     
     var currentIndex: Int = 0
+    
+    // MARK: Override Function
     
     override func viewDidLoad() {
         super.viewDidLoad()

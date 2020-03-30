@@ -11,6 +11,8 @@ import Firebase
 
 class RegisterViewController: UIViewController {
     
+    // MARK: Properties
+    
     @IBOutlet weak var dropDownButtonOutlet: UIButton!
     
     @IBOutlet weak var registerMail: UILabel!
@@ -19,6 +21,11 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var password_textField: UITextField!
     
+    @IBOutlet weak var name_textField: UITextField!
+    
+    @IBOutlet weak var mobileNumber_textField: UITextField!
+    
+    // MARK: Override Function
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,27 +47,57 @@ class RegisterViewController: UIViewController {
         }()
         dropdown1.attachTo(dropDownButtonOutlet, openDirection: .leftDown)
         
-        
-        //        dropdown2.attachTo(dropDownButtonOutlet, openDirection: .leftCenter)
-        
     }
+    
+    // MARK: Methods
     
     @IBAction func btnSignUp_touchUpInside(_ sender: Any) {
         
         if let email = email_textField.text, let password = password_textField.text{
             Auth.auth().createUser(withEmail: email + self.registerMail.text!, password: password) { authResult, error in
-              
-                if error != nil{
-                    print(error)
-                }
                 
+                if error != nil{
+                    print("error signing in")
+                }
+                    
                 else{
                     print("successfully signed in")
+                    guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "NewsViewController") as? NewsViewController else {
+                        return
+                    }
+                    
+                    
+                    vc.modalPresentationStyle = .fullScreen
+                    
+                    DispatchQueue.main.async {
+                        self.email_textField.text = ""
+                        self.password_textField.text = ""
+                        self.mobileNumber_textField.text = ""
+                        self.name_textField.text = ""
+                        Auth.auth().signIn(withEmail: email + self.registerMail.text!, password: password) { [weak self] authResult, error in
+                            guard let strongSelf = self else { return }
+                            if (error != nil){
+                                print("error signing in")
+                            }
+                            else{
+                                print("login successful")
+                                guard let vc = self?.storyboard?.instantiateViewController(withIdentifier: "NewsViewController") as? NewsViewController else {
+                                    return
+                                }
+                                
+                                
+                                vc.modalPresentationStyle = .fullScreen
+                                
+                                DispatchQueue.main.async {
+                                    self?.email_textField.text = ""
+                                    self?.password_textField.text = ""
+                                    self?.present(vc, animated:  true, completion: nil)
+                                }
+                            }
+                        }
+                    }
                 }
-                
             }
         }
     }
-    
-    
 }

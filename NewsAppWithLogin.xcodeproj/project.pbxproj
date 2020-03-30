@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		500AA370243195E800E6D5EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500AA36E243195E800E6D5EF /* Main.storyboard */; };
 		500AA372243195EA00E6D5EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500AA371243195EA00E6D5EF /* Assets.xcassets */; };
 		500AA375243195EA00E6D5EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500AA373243195EA00E6D5EF /* LaunchScreen.storyboard */; };
+		500AA37D2431994E00E6D5EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 500AA37C2431994E00E6D5EF /* GoogleService-Info.plist */; };
+		9BA6E8C02C7836EAF82C9393 /* libPods-NewsAppWithLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2416C20A70E841F0FDD3E3 /* libPods-NewsAppWithLogin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		500AA371243195EA00E6D5EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		500AA374243195EA00E6D5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		500AA376243195EA00E6D5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500AA37C2431994E00E6D5EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6E2416C20A70E841F0FDD3E3 /* libPods-NewsAppWithLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsAppWithLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADB192D72A2B6DFC6603F62 /* Pods-NewsAppWithLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsAppWithLogin.debug.xcconfig"; path = "Target Support Files/Pods-NewsAppWithLogin/Pods-NewsAppWithLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		C033AF4BFF6D50B1DAF24694 /* Pods-NewsAppWithLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsAppWithLogin.release.xcconfig"; path = "Target Support Files/Pods-NewsAppWithLogin/Pods-NewsAppWithLogin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA6E8C02C7836EAF82C9393 /* libPods-NewsAppWithLogin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				500AA367243195E800E6D5EF /* NewsAppWithLogin */,
 				500AA366243195E800E6D5EF /* Products */,
+				DD1D7436ED298A065C0180A2 /* Pods */,
+				55E3CD9FFDB838147FCC9012 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				500AA371243195EA00E6D5EF /* Assets.xcassets */,
 				500AA373243195EA00E6D5EF /* LaunchScreen.storyboard */,
 				500AA376243195EA00E6D5EF /* Info.plist */,
+				500AA37C2431994E00E6D5EF /* GoogleService-Info.plist */,
 			);
 			path = NewsAppWithLogin;
+			sourceTree = "<group>";
+		};
+		55E3CD9FFDB838147FCC9012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E2416C20A70E841F0FDD3E3 /* libPods-NewsAppWithLogin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD1D7436ED298A065C0180A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BADB192D72A2B6DFC6603F62 /* Pods-NewsAppWithLogin.debug.xcconfig */,
+				C033AF4BFF6D50B1DAF24694 /* Pods-NewsAppWithLogin.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 500AA379243195EA00E6D5EF /* Build configuration list for PBXNativeTarget "NewsAppWithLogin" */;
 			buildPhases = (
+				FFAF44BA3D6453F8BF3E657B /* [CP] Check Pods Manifest.lock */,
 				500AA361243195E800E6D5EF /* Sources */,
 				500AA362243195E800E6D5EF /* Frameworks */,
 				500AA363243195E800E6D5EF /* Resources */,
+				B5B47BFF9DEAE53FA2CDEE25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				500AA375243195EA00E6D5EF /* LaunchScreen.storyboard in Resources */,
+				500AA37D2431994E00E6D5EF /* GoogleService-Info.plist in Resources */,
 				500AA372243195EA00E6D5EF /* Assets.xcassets in Resources */,
 				500AA370243195E800E6D5EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5B47BFF9DEAE53FA2CDEE25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsAppWithLogin/Pods-NewsAppWithLogin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsAppWithLogin/Pods-NewsAppWithLogin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsAppWithLogin/Pods-NewsAppWithLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFAF44BA3D6453F8BF3E657B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsAppWithLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		500AA361243195E800E6D5EF /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		500AA37A243195EA00E6D5EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADB192D72A2B6DFC6603F62 /* Pods-NewsAppWithLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		500AA37B243195EA00E6D5EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C033AF4BFF6D50B1DAF24694 /* Pods-NewsAppWithLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

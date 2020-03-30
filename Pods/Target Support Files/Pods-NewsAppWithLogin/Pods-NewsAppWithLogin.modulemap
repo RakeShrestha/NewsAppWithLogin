@@ -1,0 +1,6 @@
+module Pods_NewsAppWithLogin {
+  umbrella header "Pods-NewsAppWithLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

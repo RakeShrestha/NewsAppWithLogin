@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>278730314891-07qol4i8am6e0puqav0efb8r0jfajohu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.278730314891-07qol4i8am6e0puqav0efb8r0jfajohu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyADQyQLojgG0qX_4wHH3P0rT5ux4bW_5Xo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>278730314891</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>np.com.rakesh.NewsAppWithLogin</string>
+	<key>PROJECT_ID</key>
+	<string>newsappwithlogin</string>
+	<key>STORAGE_BUCKET</key>
+	<string>newsappwithlogin.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:278730314891:ios:1b88ecbee9b0685445308e</string>
+	<key>DATABASE_URL</key>
+	<string>https://newsappwithlogin.firebaseio.com</string>
+</dict>
+</plist>
